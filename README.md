@@ -39,11 +39,12 @@ After the preparation, run this commond to generate the final saliency maps.
  python test.py 
 ```
 
-We provide the trained model file ([Baidu drive](https://pan.baidu.com/s/1KdP0doBCiIme4y_j4Y4OPQ code:uht6)), and run this command to check its completeness:
+We provide the trained model file ([Baidu drive](link：https://pan.baidu.com/s/12Q0RGrQFch5oHJ-4xsIbcQ code：p50u), and run this command to check its completeness:
 ```
 cksum MAFNet 
 ```
 you will obtain the result `MAFNet`.
 
 ## evaluation
+We provide the saliency maps trained by our model ([Baidu drive](link:https://pan.baidu.com/s/1_VmermhnJsI6hyGMjU_SiQ code：zhs0), 
 We provide the evaluation code in the folder  "eval_code" for fair comparisons. You may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. 

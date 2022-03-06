@@ -46,5 +46,5 @@ cksum MAFNet
 you will obtain the result `MAFNet`.
 
 ## evaluation
-We provide the saliency maps trained by our model ([Baidu drive](link: https://pan.baidu.com/s/1_VmermhnJsI6hyGMjU_SiQ code：zhs0), 
+
 We provide the evaluation code in the folder  "eval_code" for fair comparisons. You may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. 

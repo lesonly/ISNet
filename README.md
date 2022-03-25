@@ -1,4 +1,4 @@
-# MAFNet
+# EAFNet
 
 
 ## dependencies 

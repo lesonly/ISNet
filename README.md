@@ -47,4 +47,8 @@ you will obtain the result `EAFNet`.
 
 ## evaluation
 
-We provide the evaluation code in the folder  "eval_code" for fair comparisons. You may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. 
+We provide the predicted saliency maps on five benchmark datasets ([Baidu drive](link：https://pan.baidu.com/s/1usIegmAAbt9FJAx_FIMoFg?pwd=dkkt code: dkkt).
+
+You can use the evaluation code in the folder  "eval_code" for fair comparisons, but you may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. 
+
+

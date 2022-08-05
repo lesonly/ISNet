@@ -16,7 +16,7 @@ code：fv6m)) of ResNet-50 implemented in Pytorch if you want to train the netwo
 code：sfx6)) in the folder of `data` for training or test.
 
 ## generate the boundary envelope
-After preparing the data folder, you need to use the enlarge_b.py to generate the boundary envelope and Expanded Ground Truth for training. Run this command
+After preparing the data folder, you need to use the enlarge_b.py to produce the boundary envelope, which can be used to generate the Expanded Ground Truth for training. Run this command
 ```
 python data4/enlarged_b.py
 ```

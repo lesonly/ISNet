@@ -31,7 +31,7 @@ you may revise the `TAG` and `SAVEPATH` defined in the *train.py*. After the pre
 ```
 'CUDA_VISIBLE_DEVICES=0,…… python -m torch.distributed.launch --nproc_per_node=4 train.py -b 16'
 ```
-make sure  that the GPU memory is enough (the original training is conducted on a one NVIDIA RTX 2080Ti (11G) card with the batch size of 16).
+make sure  that the GPU memory is enough (the original training is conducted on four NVIDIA RTX 2080Ti (11G) card with the batch size of 64).
 
 ## test
 After the preparation, run this commond to generate the final saliency maps.

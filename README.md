@@ -31,7 +31,7 @@ you may revise the `TAG` and `SAVEPATH` defined in the *train.py*. After the pre
 ```
 'CUDA_VISIBLE_DEVICES=0,1,…… python -m torch.distributed.launch --nproc_per_node=x train.py -b 16'
 ```
-make sure that the GPU memory is enough (You can adjust the batch according to the GPU memory).
+make sure that the GPU memory is enough (You can adjust the batch according to your GPU memory).
 
 ## test
 After the preparation, run this commond to generate the final saliency maps.

@@ -9,7 +9,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from tensorboardX import SummaryWriter
 from data4 import dataset
-from net import MAFNet
+from net import EAFNet
 import logging as logger
 from lib4.data_prefetcher import DataPrefetcher
 import numpy as np
@@ -160,11 +160,11 @@ def train(Dataset, Network):
             
             image, mask,enlarge_b,di,er= prefetcher.next()
             
-        if epoch>32:
+        if epoch == 36:
             torch.save(net.module.state_dict(), cfg.savepath+'/model'+str(epoch+1))
 
 
 
 if __name__=='__main__':
     
-    train(dataset, MAFNet)
+    train(dataset, EAFNet)

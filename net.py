@@ -454,9 +454,9 @@ class Coarse_Net(nn.Module):
         weight_init(self)
 
 
-class MAFNet(nn.Module):
+class EAFNet(nn.Module):
     def __init__(self, cfg):
-        super(MAFNet, self).__init__()
+        super(EAFNet, self).__init__()
         self.aspp = ASPP(256, [1, 2, 4])
         self.cfg = cfg
         self.bkbone = ResNet()
@@ -544,7 +544,7 @@ class MAFNet(nn.Module):
         out2_coarse_a = F.interpolate(out2_coarse_a, size=x.size()[2:], mode='bilinear')
 
 
-        return out2, out3, out4, out5,out2_coarse_a#,out345,out45#, out2_a  # , out3_coarse, out4_coarse, out5_coarse
+        return out2, out3, out4, out5,out2_coarse_a
 
     def initialize(self):
         if self.cfg.snapshot:  # 监控snapshot状态

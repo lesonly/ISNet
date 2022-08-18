@@ -17,7 +17,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 #from tensorboardX import SummaryWriter
 from lib import dataset
-from net import MAFNet
+from net import EAFNet
 import time
 import logging as logger
 
@@ -93,16 +93,16 @@ class Test(object):
                 out2, out3, out4, out5,coarse_out2 = self.net(image.cuda().float())               
                 out2     = F.interpolate(out2, size=(H,W), mode='bilinear')
                 pred     = (torch.sigmoid(out2[0,0])*255).cpu().numpy()
-                head     = './result/MAFNet/'+ self.cfg.datapath.split('/')[-1]#.format(TAG) 
+                head     = './result/EAFNet/'+ self.cfg.datapath.split('/')[-1]#.format(TAG) 
                 if not os.path.exists(head):
                     os.makedirs(head)
                 cv2.imwrite(head+'/'+name[0],np.uint8(pred))
 
 if __name__=='__main__':
    
-    fia =  './ours/MAFNet'    
+    fia =  './ours/EAFNet'    
     for e in DATASETS:
-        t =Test(dataset, e, MAFNet,fia)
+        t =Test(dataset, e, EAFNet,fia)
         t.accuracy()
         t.save()
 

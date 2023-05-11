@@ -30,9 +30,9 @@ logger.basicConfig(level=logger.INFO, format='%(levelname)s %(asctime)s %(filena
                            filename="test_%s.log"%(TAG), filemode="w")
 
 
-# DATASETS = [ './data/PASCAL-S', './data/ECSSD', './data/HKU-IS',
-#              './data/DUT-OMRON', './data/DUTS']
-DATASETS = ['./data/PASCAL-S']
+DATASETS = [ './data/PASCAL-S', './data/ECSSD', './data/HKU-IS',
+            './data/DUT-OMRON', './data/DUTS']
+
 
 
 class Test(object):
@@ -104,5 +104,5 @@ if __name__=='__main__':
     for e in DATASETS:
         t =Test(dataset, e, SENet,fia)
         t.accuracy()
-        #t.save()
+        t.save()
 

@@ -1,4 +1,4 @@
-# SENet
+# ISNet
 
 
 ## dependencies 
@@ -21,7 +21,7 @@ After preparing the data folder, you need to use the enlarge_b.py to produce the
 python data4/enlarged_b.py
 ```
 ## generate the dilated and eroded mask for extended difference loss function
-After preparing the data folder, you need to use the dilate_erode.py to generate the dilated and eroded mask for extended difference loss function for training. Run this command
+After preparing the data folder, you need to u the dilate_erode.py to generate the dilated and eroded mask for extended difference loss function for training. Run this command
 ```
 python data4/dilate_erode.py
 ```

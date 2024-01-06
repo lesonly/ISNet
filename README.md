@@ -41,9 +41,9 @@ After the preparation, run this commond to generate the final saliency maps.
 
 We provide the trained model file ([Baidu drive](link：https://pan.baidu.com/s/12Q0RGrQFch5oHJ-4xsIbcQ code：p50u), and run this command to check its completeness:
 ```
-cksum EAFNet 
+cksum SENet 
 ```
-you will obtain the result `EAFNet`.
+you will obtain the result `SENet`.
 
 ## evaluation
 

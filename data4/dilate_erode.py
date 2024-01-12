@@ -22,5 +22,5 @@ with open('./data/DUTS/train.txt', 'r') as lines:
         img = cv2.imread(maskpath,1)
         dilate = dilate_img(img,3,5)
         erode = erosion_img(img, 3,5) 
-        cv2.imwrite('./data/DUTS/mask_d/'+ line.strip() + '.png',dilate)
-        cv2.imwrite('./data/DUTS/mask_e/'+ line.strip() + '.png',dilate)
+        cv2.imwrite('./data/DUTS/mask_d3/'+ line.strip() + '.png',dilate)
+        cv2.imwrite('./data/DUTS/mask_e3/'+ line.strip() + '.png',dilate)

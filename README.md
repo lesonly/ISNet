@@ -39,7 +39,7 @@ After the preparation, run this commond to generate the final saliency maps.
  python test.py 
 ```
 
-We provide the trained model file ([Baidu drive](link：https://pan.baidu.com/s/12Q0RGrQFch5oHJ-4xsIbcQ code：p50u), and run this command to check its completeness:
+We provide the trained model file ([Baidu drive](link：https://pan.baidu.com/s/1rPpyKnNQPbyA1RVbz1ipjg?pwd=ys6n  code：ys6n), and run this command to check its completeness:
 ```
 cksum ISNet 
 ```

@@ -56,9 +56,9 @@ You can use the evaluation code in the folder  "eval_code" for fair comparisons,
 We really hope this repo can contribute the conmunity, and if you find this work useful, please use the following citation:
 
 @article{DBLP:journals/pr/ZhuLG24, <br>
-  author       = {Ge Zhu and
-                  Jinbao Li and
-                  Yahong Guo},
+  author       = {Ge Zhu and  <br>
+                  Jinbao Li and  <br>
+                  Yahong Guo},  <br>
   title        = {Separate first, then segment: An integrity segmentation network for salient object detection}, <br>
   journal      = {Pattern Recognit.}, <br>
   volume       = {150}, <br>
